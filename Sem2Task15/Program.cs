@@ -5,7 +5,7 @@
 Console.WriteLine("Введите число: ");
 string numberDayOfWeek = Console.ReadLine();
 int inputNumber = int.Parse(numberDayOfWeek);
-if (inputNumber > 7)
+if (inputNumber > 7 || inputNumber == 0)
 {
     Console.WriteLine("Такого дня недели нет");
 }

@@ -13,5 +13,5 @@ if (threeDigitNumber.Length == 3)
 }
 else
 {
-    Console.WriteLine("число не трёхзначное");
+    Console.WriteLine("Число не трёхзначное");
 }
