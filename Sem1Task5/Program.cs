@@ -4,7 +4,7 @@
 //=====================================================================================
 string? inputLineN = Console.ReadLine();
 
-if (inputLineN != null) ;
+if (inputLineN != null)
 {
     int inputNumberN = int.Parse(inputLineN);
     if (inputNumberN > 0)

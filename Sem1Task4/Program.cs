@@ -5,7 +5,7 @@ Console.WriteLine("Введите три числа: ");
 string? inputLineA = Console.ReadLine();
 string? inputLineB = Console.ReadLine();
 string? inputLineC = Console.ReadLine();
-
+if (inputLineA != null && inputLineB != null && inputLineC != null)
 {
     int inputA = int.Parse(inputLineA);
     int inputB = int.Parse(inputLineB);
