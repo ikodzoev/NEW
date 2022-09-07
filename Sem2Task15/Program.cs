@@ -3,8 +3,10 @@
 // обозначающую день недели, и проверяет, является ли этот день выходным
 //============================================================================
 Console.WriteLine("Введите число: ");
-string? numberDayOfWeek = Console.ReadLine();
+string? numberDayOfWeek = Console.ReadLine()??"";
+
 int inputNumber = int.Parse(numberDayOfWeek);
+
 if (inputNumber > 7 || inputNumber == 0)
 {
     Console.WriteLine("Такого дня недели нет");

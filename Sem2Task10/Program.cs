@@ -3,7 +3,8 @@
 // и на выходе показывает вторую цифру этого числа.
 //=====================================================================
 Console.WriteLine("Введите трёхзначное число");
-string threeDigitNumber = Console.ReadLine();
+string? threeDigitNumber = Console.ReadLine();
+if (threeDigitNumber != null)
 
 //проверка числа на трёхзначность;
 if (threeDigitNumber.Length == 3)

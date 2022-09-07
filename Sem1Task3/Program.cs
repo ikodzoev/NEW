@@ -1,7 +1,7 @@
 ﻿//=========================================================================================
 // # 3 Напишите программу, которая будет выдавать название дня недели по заданному номеру
 //=========================================================================================
-string? inputLine = Console.ReadLine();
+string? inputLine = Console.ReadLine()??"";
 
 if (inputLine != null)
 {
@@ -37,7 +37,7 @@ if (inputLine != null)
     //     case 7: outDayOfWeek = "воскресенье"; break;
     //     default: outDayOfWeek = "Такого дня нет"; break;
     // }
-    outDayOfWeek = System.Globalization.CultureInfo.GetCultureInfo("ru-RU").DateTimeFormat.GetDayName((DayOfWeek)Enum.GetValues(typeof(DayOfWeek)).GetValue(inputDayOfWeek));
+    // outDayOfWeek = System.Globalization.CultureInfo.GetCultureInfo("ru-RU").DateTimeFormat.GetDayName((DayOfWeek)Enum.GetValues(typeof(DayOfWeek)).GetValue(inputDayOfWeek));
 
     Console.WriteLine(outDayOfWeek);
 

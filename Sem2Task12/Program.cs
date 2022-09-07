@@ -6,9 +6,9 @@
 void Variant1()
 {
     Console.Write("Введите первое число: ");
-    string? inputLineA = Console.ReadLine();
+    string? inputLineA = Console.ReadLine()??"";
     Console.Write("Введите второе число: ");
-    string? inputLineB = Console.ReadLine();
+    string? inputLineB = Console.ReadLine()??"";
 
     int inputNumberA = int.Parse(inputLineA);
     int inputNumberB = int.Parse(inputLineB);

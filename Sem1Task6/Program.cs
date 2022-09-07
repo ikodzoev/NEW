@@ -4,7 +4,7 @@
 //===================================================================
 Console.WriteLine("Введите число: ");
 string? inputLineA = Console.ReadLine();
-
+if (inputLineA != null)
 {
     int inputA = int.Parse(inputLineA);
     int R = inputA % 2;
