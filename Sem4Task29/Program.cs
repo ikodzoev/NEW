@@ -1,16 +1,16 @@
 ﻿// ====================================================================================
 // № 29 Напишите программу, которая задаёт массив из 8 элементов и выводит их на экран.
 // ====================================================================================
-int ReadData(string line) // чтение данных из консоли
-{
-    //Выводим сообщение
-    Console.WriteLine(line);
-    //Считываем число
-    int number = int.Parse(Console.ReadLine() ?? "0");
-    //Возвращаем значение
-    return number;
-}
-void PrintArray(int[] array)
+// int ReadData(string line) // чтение данных из консоли
+// {
+//     //Выводим сообщение
+//     Console.WriteLine(line);
+//     //Считываем число
+//     int number = int.Parse(Console.ReadLine() ?? "0");
+//     //Возвращаем значение
+//     return number;
+// }
+void PrintArray(int[] array) // выводим на экран
 {
     string arrString = "";
 
@@ -21,18 +21,16 @@ void PrintArray(int[] array)
 
     Console.WriteLine(arrString);
 }
-int[] GenArray(int arrayLength, int Start, int Stop)
+int[] GenArray(int arrayLength) // генерируем массив
 {
     Random Gen = new Random();
     int[] outArray = new int[arrayLength];
     for (int i = 0; i < arrayLength; i++)
     {
-        outArray[i] = Gen.Next(Start, Stop);
+        outArray[i] = Gen.Next(1, 9);
     }
     return outArray;
 }
-int arrayLength = ReadData("Введите длину массива: ");
-int Start = ReadData("Введите начало массива: ");
-int Stop = ReadData("Введите конец массива: ");
-int[] outArray = GenArray(arrayLength, Start, Stop);
+int arrayLength = 8;
+int[] outArray = GenArray(arrayLength);
 PrintArray(outArray);
