@@ -11,7 +11,7 @@ int ReadData(string line) // чтение данных из консоли
     //Возвращаем значение
     return number;
 }
-void PrintArray(int[] array)
+void PrintArray(int[] array) // выводим на экран
 {
     string arrString = "";
 
@@ -22,7 +22,7 @@ void PrintArray(int[] array)
 
     Console.WriteLine(arrString);
 }
-int[] GenArray(int arrayLength, int Start, int Stop)
+int[] GenArray(int arrayLength, int Start, int Stop)// генерируем массив в заданном диапазоне
 {
     Random Gen = new Random();
     int[] outArray = new int[arrayLength];
