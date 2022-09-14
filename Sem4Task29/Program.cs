@@ -19,7 +19,8 @@ void PrintArray(int[] array) // выводим на экран
         arrString += array[i];
     }
 
-    Console.WriteLine(arrString);
+    Console.WriteLine($"Массив: [{string.Join(", ", array)}]");
+    // Console.WriteLine(arrString);
 }
 int[] GenArray(int arrayLength) // генерируем массив
 {

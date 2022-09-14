@@ -20,7 +20,7 @@ void PrintArray(int[] array) // выводим на экран
         arrString += array[i];
     }
 
-    Console.WriteLine(arrString);
+    Console.WriteLine($"Массив: [{string.Join(", ", array)}]");
 }
 int[] GenArray(int arrayLength, int Start, int Stop)// генерируем массив в заданном диапазоне
 {
