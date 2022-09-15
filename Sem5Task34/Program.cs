@@ -21,7 +21,7 @@ void PrintArray(int[] array) // вывод массива
 
 void PrintData(int numberEvenNums) // вывод результата подсчёта
 {
-    Console.WriteLine(numberEvenNums);
+    Console.WriteLine("Количество чётных чисел в массиве: " + numberEvenNums);
 }
 
 int EvenCount(int[] array) // подсчёт кол-ва чётных чисел в массиве
