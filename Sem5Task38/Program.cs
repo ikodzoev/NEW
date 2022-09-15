@@ -22,7 +22,7 @@ void PrintArray(double[] array) // вывод массива
 
 void PrintData(double diffMaxMin) // вывод результата вычисления
 {
-    Console.WriteLine("Разница между макс. и мин.: " + diffMaxMin);
+    Console.WriteLine("Разница между макс. и мин.: " + Math.Round (diffMaxMin, 2));
 }
 
 double GetMaxMin(double[] array) //вычисляем максимальный и минимальный элементы массива
