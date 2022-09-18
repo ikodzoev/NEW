@@ -22,11 +22,11 @@ double[] FindPoint(double b1, double k1, double b2, double k2) // вычисля
     double[] outArray = new double[2];
     double xLine = 0;
     double yLine = 0;
-    if (b1 == b2 & k1 == k2){Console.WriteLine("Прямые совпадают");}
+    if (b1 == b2 & k1 == k2) { Console.WriteLine("Прямые совпадают"); }
     else
     {
-        if (k1 == k2) {Console.WriteLine("Прямые параллельны");}
-        else{xLine = (b2 - b1) / (k1 - k2); yLine = k1 * xLine + b1;}
+        if (k1 == k2) { Console.WriteLine("Прямые параллельны"); }
+        else { xLine = (b2 - b1) / (k1 - k2); yLine = k1 * xLine + b1; }
     }
     outArray[0] = xLine;
     outArray[1] = yLine;

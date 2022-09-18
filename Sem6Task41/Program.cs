@@ -3,20 +3,20 @@
 //==========================================================================================================
 int ReadData(string line)
 {
-    // Выводим сообщение
+    // Выводим сообщение;
     Console.WriteLine(line);
-    // Считываем число
+    // Считываем число;
     int number = int.Parse(Console.ReadLine() ?? "0");
-    // Возвращаем значение
+    // Возвращаем значение;
     return number;
 }
 
-void PrintData(int number) // вывод результата подсчёта
+void PrintData(int number) // вывод результата подсчёта;
 {
     Console.WriteLine("Количество введённых чисел больше 0: " + number);
 }
 
-int CountNum(int M) // подсчёт кол-ва чисел > 0
+int CountNum(int M) // подсчёт кол-ва чисел > 0;
 {
     int res = 0;
     for (int i = 0; i < M; i++)
