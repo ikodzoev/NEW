@@ -30,16 +30,21 @@ int[,] Fill2DArray(int numRow, int numCol, int topBorder, int downBorder)
 }
 
 // Вывод результата подсчёта;
+// void PrintData(string prefix, int data) //разбили на две части вывод в консоль
+// {
+//     if (data == -1)
+//     {
+//         Console.WriteLine("Такого элемента в массиве нет!");
+//     }
+//     else
+//     {
+//         Console.WriteLine("Элемент в заданной позиции: " + data); //сначала выводим prefix + а потом данные data;
+//     }
+// }
 void PrintData(string prefix, int data) //разбили на две части вывод в консоль
 {
-    if (data == -1)
-    {
-        Console.WriteLine("Такого элемента в массиве нет!");
-    }
-    else
-    {
-        Console.WriteLine("Элемент в заданной позиции: " + data); //сначала выводим prefix + а потом данные data;
-    }
+    if (data == -1) { Console.WriteLine("Такого элемента в массиве нет!"); }
+    else { Console.WriteLine("Элемент в заданной позиции: " + data); } //сначала выводим prefix + а потом данные data;
 }
 
 // Печать двумерного массива;
@@ -69,9 +74,9 @@ int FindElem(int x, int y, int[,] array2D)
     }
 }
 
-int numRow = 10; 
-int numCol = 10; 
-int topBorder = 10; 
+int numRow = 10;
+int numCol = 10;
+int topBorder = 10;
 int downBorder = 25;
 int[,] array2D = Fill2DArray(numRow, numCol, topBorder, downBorder);
 
