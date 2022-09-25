@@ -11,18 +11,18 @@ int ReadData(string line)
 }
 
 // Печать двумерного массива
-void Print2DArray(int[,] matr)
-{
-    for (int i = 0; i < matr.GetLength(0); i++)
-    {
-        for (int j = 0; j < matr.GetLength(1); j++)
-        {
-            Console.Write($"{matr[i, j]} ");
-        }
-        Console.WriteLine();
-    }
-    Console.WriteLine();
-}
+// void Print2DArray(int[,] matr)
+// {
+//     for (int i = 0; i < matr.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < matr.GetLength(1); j++)
+//         {
+//             Console.Write($"{matr[i, j]} ");
+//         }
+//         Console.WriteLine();
+//     }
+//     Console.WriteLine();
+// }
 
 // Заполняем массив случайными числами
 void Fill2DArray(int[,] matr, int min, int max)
