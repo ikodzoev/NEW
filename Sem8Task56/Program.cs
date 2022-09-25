@@ -83,9 +83,9 @@ int n = 5;
 int min = 1;
 int max = 9;
 
-int[,] matrix = new int[m, n];
-Fill2DArray(matrix, min, max);
-Print2DArray(matrix);
-int result = FindMinRow(matrix);
+int[,] array2D = new int[m, n];
+Fill2DArray(array2D, min, max);
+Print2DArray(array2D);
+int result = FindMinRow(array2D);
 PrintResult("Строка с наименьшей суммой: ", "№ " + result + " сверху вниз");
-// PrintResult(" ", "Строка с наименьшей суммой: " + FindMinRow(matrix));
+// PrintResult(" ", "Строка с наименьшей суммой: " + FindMinRow(array2D));

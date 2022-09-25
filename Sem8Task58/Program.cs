@@ -17,12 +17,6 @@ void Print2DArray(string line, int[,] matr)
     Console.WriteLine();
 }
 
-// // Печать результата
-// void PrintResult(string prefix, string data)
-// {
-//     Console.WriteLine(prefix + data);
-// }
-
 // Метод заполнения массива случайными числами;
 void Fill2DArray(int[,] matr, int min, int max)
 {
@@ -46,15 +40,13 @@ int[,] MultiplyMatrix(int[,] firstMatrix, int[,] secondMatrix, int[,] resultMatr
             {
                 int sum = 0;
                 for (int k = 0; k < firstMatrix.GetLength(1); k++)
-                {
-                    sum += firstMatrix[i, k] * secondMatrix[k, j];
-                }
+                { sum += firstMatrix[i, k] * secondMatrix[k, j]; }
                 resultMatrix[i, j] = sum;
             }
         }
         return resultMatrix;
     }
-    else{Console.WriteLine("Матрицы перемножить нельзя!");}
+    else { Console.WriteLine("Матрицы перемножить нельзя!"); }
     return resultMatrix;
 }
 

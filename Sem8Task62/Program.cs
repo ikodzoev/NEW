@@ -36,7 +36,7 @@ int[,] Spiral2DArray(int[,] matr)
 // Печать двумерного массива
 void Print2DArray(string line, int[,] matr)
 {
-    Console.WriteLine("Спиральная матрица в заданном размере: ");
+    Console.WriteLine("Спиральный массив в заданном размере: ");
     Console.WriteLine();
     for (int i = 0; i < matr.GetLength(0); i++)
     {
@@ -50,6 +50,5 @@ void Print2DArray(string line, int[,] matr)
 }
 
 int size = ReadData("Введите размер массива: ");
-int[,] matrix = new int[size, size];
-Print2DArray(" ", Spiral2DArray(matrix));
-
+int[,] array2D = new int[size, size];
+Print2DArray(" ", Spiral2DArray(array2D));

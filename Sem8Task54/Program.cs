@@ -49,7 +49,7 @@ int[,] UpdateArray(int[,] arr)
     return arr;
 }
 
-// // Метод сортировки массива по убыванию пузырьком;
+// // Метод сортировки массива по убыванию;
 // int[,] UpdateArray(int[,] arr)
 // {
 //     for (int i = 0; i < arr.GetLength(0); i++)
