@@ -4,19 +4,6 @@
 // =================================================================
 
 // Печать двумерного массива
-// void Print2DArray(int[,] matr)
-// {
-//     for (int i = 0; i < matr.GetLength(0); i++)
-//     {
-//         for (int j = 0; j < matr.GetLength(1); j++)
-//         {
-//             Console.Write($"{matr[i, j]} ");
-//         }
-//         Console.WriteLine();
-//     }
-//     Console.WriteLine();
-// }
-
 void Print2DArray(string line, int[,] matr)
 {
     Console.WriteLine();
