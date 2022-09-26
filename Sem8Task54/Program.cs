@@ -4,8 +4,23 @@
 // =================================================================
 
 // Печать двумерного массива
-void Print2DArray(int[,] matr)
+// void Print2DArray(int[,] matr)
+// {
+//     for (int i = 0; i < matr.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < matr.GetLength(1); j++)
+//         {
+//             Console.Write($"{matr[i, j]} ");
+//         }
+//         Console.WriteLine();
+//     }
+//     Console.WriteLine();
+// }
+
+void Print2DArray(string line, int[,] matr)
 {
+    Console.WriteLine();
+    Console.WriteLine(line);
     for (int i = 0; i < matr.GetLength(0); i++)
     {
         for (int j = 0; j < matr.GetLength(1); j++)
@@ -77,5 +92,5 @@ int max = 9;
 int[,] array2D = new int[m, n];
 
 Fill2DArray(array2D, min, max);
-Print2DArray(array2D);
-Print2DArray(UpdateArray(array2D));
+Print2DArray("Массив случайных чисел: ", array2D);
+Print2DArray("Массив чисел, упорядоченных по убыванию: ", UpdateArray(array2D));

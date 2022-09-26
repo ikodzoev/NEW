@@ -22,25 +22,11 @@ int[,] Fill2DArray(int numRow, int numCol, int topBorder, int downBorder)
     for (int i = 0; i < numRow; i++)
     {
         for (int j = 0; j < numCol; j++)
-        {
-            array2D[i, j] = rand.Next(topBorder, downBorder + 1);
-        }
+        {array2D[i, j] = rand.Next(topBorder, downBorder + 1);}
     }
     return array2D;
 }
 
-// Вывод результата подсчёта;
-// void PrintData(string prefix, int data) //разбили на две части вывод в консоль
-// {
-//     if (data == -1)
-//     {
-//         Console.WriteLine("Такого элемента в массиве нет!");
-//     }
-//     else
-//     {
-//         Console.WriteLine("Элемент в заданной позиции: " + data); //сначала выводим prefix + а потом данные data;
-//     }
-// }
 void PrintData(string prefix, int data) //разбили на две части вывод в консоль
 {
     if (data == -1) { Console.WriteLine("Такого элемента в массиве нет!"); }
@@ -65,13 +51,8 @@ void Print2DArray(int[,] matr)
 int FindElem(int x, int y, int[,] array2D)
 {
     if (x < array2D.GetLength(0) && y < array2D.GetLength(1))
-    {
-        return array2D[x, y];
-    }
-    else
-    {
-        return -1;
-    }
+    { return array2D[x, y]; }
+    else { return -1; }
 }
 
 int numRow = 10;

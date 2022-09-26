@@ -30,7 +30,6 @@ void Print3DArray(int[,,] matr)
             {
                 Console.Write($"{matr[i, j, k]}({i},{j},{k}) ");
             }
-
             Console.WriteLine();
         }
         Console.WriteLine();
