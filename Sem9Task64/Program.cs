@@ -18,7 +18,7 @@ void PrintResult(string line)
     Console.WriteLine(line);
 }
 
-// Рекурсивный метод
+// Рекурсивный метод выведения чисел
 string RecurLine(int N) 
 {
     if (N == 0) return " ";
